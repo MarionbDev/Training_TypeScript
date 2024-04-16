@@ -1,4 +1,4 @@
 "use strict";
 let myName = "Jane";
-const hello = (name) => { return (`Hello ${name}`); };
-console.log(hello(myName));
+const hello1 = (name) => { return (`Hello ${name}`); };
+console.log(hello1(myName));
