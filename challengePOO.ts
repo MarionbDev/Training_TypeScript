@@ -1,3 +1,5 @@
+import assert from "assert";
+
 class Person {
   private name: string;
   private age: number;
@@ -25,3 +27,10 @@ const person2 = new Person("Mary", 35);
 
 console.log(person1.tellAllInfo());
 console.log(person2.tellAllInfo());
+
+// Test
+
+const client = new Person("John", 40);
+assert.equal(typeof client.tellMyName, "function");
+assert.equal(typeof client.tellMyAge, "function");
+assert.equal(client.tellAllInfo(), "I am John and I am 40 years old");
